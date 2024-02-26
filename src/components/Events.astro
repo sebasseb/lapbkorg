@@ -1,0 +1,22 @@
+---
+const EVENTS = [
+    {
+        image: "/flyers/18F/18F-2.png",
+        title: "18F",
+        date: "2024",
+        description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque maxime temporibus deserunt quisquam similique voluptas at dolore odit distinctio fuga earum perspiciatis doloribus, molestiae dignissimos, molestias soluta ratione cum impedit. Deleniti harum veritatis nostrum asperiores esse, qui eius, similique reprehenderit ea doloribus eligendi! Doloribus quasi quisquam, officiis et inventore corrupti! Facere explicabo esse nihil impedit ex voluptatum nemo debitis repellat."
+    }
+]
+---
+
+<article>
+    <section class="flex flex-col lg:flex-row gap-5">
+        {
+            EVENTS.map((event) => (
+                <img class="rounded-md lg:w-1/2 lg:-rotate-3" src={event.image} alt={event.title} />
+                <p class="lg:w-1/2 lg:self-center">{event.description}</p>
+            ))
+        }
+    </section>
+</article>
+
